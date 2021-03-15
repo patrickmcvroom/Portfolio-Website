@@ -14,7 +14,13 @@
 @font-face
 {
     font-family: NavigationFonts;
-    src: url(fonts/american_purpose/American\ Purpose.ttf)
+    src: url(fonts/american_purpose/American\ Purpose.ttf);
+}
+
+@font-face
+{
+    font-family: ParagraphFonts;
+    src: url(fonts/indulta_semiserif/Indulta-SemiSerif-boldFFP.otf);
 }
 
 body
@@ -23,21 +29,23 @@ body
     padding: 0;
     font-family: TitleFonts;
     width: 100%;
-    height: 100vh;
-}
-
-#particles-js
-{
-    height: 100%;
     background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
 }
-
 
 .mainbody
 {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 2500px;
+    overflow: hidden;
+    background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+}
+
+.portfolio_mainbody
+{
+    position: absolute;
+    width: 100%;
+    height: 3500px;
     overflow: hidden;
     background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
 }
@@ -51,7 +59,7 @@ body
     padding: 38px;
     text-align: center;
     position: absolute;
-    top: 7%;
+    top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -62,7 +70,7 @@ body
     display: flex;
     margin: auto;
     width: 30%;
-    padding: 10px;
+    padding: 0px;
 }
 
 .navigation > .centre_side > div
@@ -91,94 +99,12 @@ body
     color: black;
 }
 
-/* Box Animations */
-.box
-{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-    border: 6px solid rgba(255, 255, 255, 0.8);
-}
-.box div :nth-child(1)
-{
-    top: 12%;
-    left: 42%;
-    animation: animate 10s linear infinite;
-}
-.box div :nth-child(2)
-{
-    top: 70%;
-    left: 50%;
-    animation: animate 7s linear infinite;
-}
-.box div :nth-child(3)
-{
-    top: 17%;
-    left: 6%;
-    animation: animate 9s linear infinite;
-}
-.box div :nth-child(4)
-{
-    top: 20%;
-    left: 60%;
-    animation: animate 10s linear infinite;
-}
-.box div :nth-child(5)
-{
-    top: 67%;
-    left: 10%;
-    animation: animate 6s linear infinite;
-}
-.box div :nth-child(6)
-{
-    top: 80%;
-    left: 70%;
-    animation: animate 12s linear infinite;
-}
-.box div :nth-child(7)
-{
-    top: 60%;
-    left: 80%;
-    animation: animate 15s linear infinite;
-}
-.box div :nth-child(8)
-{
-    top: 32%;
-    left: 25%;
-    animation: animate 16s linear infinite;
-}
-.box div :nth-child(9)
-{
-    top: 90%;
-    left: 25%;
-    animation: animate 9s linear infinite;
-}
-.box div :nth-child(10)
-{
-    top: 20%;
-    left: 80%;
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animate{
-    0% {
-        transform: scale(0) translateY(0) rotate(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1.3) translateY(-90) rotate(360deg);
-        opacity: 0;
-    }
-}
-
 /* Titles and Subtitles */
 .container
 {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -223,4 +149,53 @@ body
         color: #ffffff00;
         margin-bottom: -40px;
     }
+}
+
+.description
+{
+    text-align: center;
+    font-family: NavigationFonts;
+    margin-top: 1000px;
+    padding-right: 130px;
+    padding-left: 130px;
+}
+
+.about_me
+{
+    font-family: NavigationFonts;
+    font-size: 45px;
+}
+
+p
+{
+    font-size: 25px;
+    font-family: ParagraphFonts;
+}
+
+button
+{
+    background: linear-gradient(to left, rgb(38, 19, 105), rgb(146, 76, 163));
+    border: none;
+    color: ivory;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: ParagraphFonts;
+    border-radius: 12px;
+    transition: color 0.5s;
+}
+
+button:hover
+{
+    background: linear-gradient(to left, rgb(101, 72, 207), rgb(198, 112, 219));
+    color: rgb(42, 13, 75);
+}
+
+.get_in_touch
+{
+    margin-top: 450px;
+    font-family: NavigationFonts;
+    font-size: 45px;
 }
