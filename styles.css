@@ -1,15 +1,27 @@
 /* Master Styles */
 @font-face
 {
-    font-family: MyFont;
+    font-family: TitleFonts;
+    src: url(fonts/gumbo/Gumbo\ DEMO.otf);
+}
+
+@font-face
+{
+    font-family: SubtitleFonts;
     src: url(fonts/Youtube\ Star.ttf);
+}
+
+@font-face
+{
+    font-family: NavigationFonts;
+    src: url(fonts/american_purpose/American\ Purpose.ttf)
 }
 
 body
 {
     margin: 1px;
     background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
-    font-family: MyFont;
+    font-family: TitleFonts;
     
     width: 100%;
     height: 100vh;
@@ -35,13 +47,13 @@ body
 {
     display: flex;
     margin: auto;
-    width: 35%;
+    width: 30%;
     padding: 10px;
 }
 
 .navigation > .centre_side > div
 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: NavigationFonts;
     margin-right: 20px;
     font-size: 20px;
 }
@@ -70,7 +82,7 @@ body
 
 .navigation_link a:hover
 {
-    color: #240053;
+    color: black;
 }
 
 .home_title
@@ -83,6 +95,7 @@ body
 
 .home_subtitle
 {
+    font-family: SubtitleFonts;
     text-align: center;
     color: black;
     font-size: 50px;
