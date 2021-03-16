@@ -199,3 +199,19 @@ button:hover
     font-family: NavigationFonts;
     font-size: 45px;
 }
+
+.portfolio
+{
+    text-align: center;
+    font-family: NavigationFonts;
+    margin-top: 1000px;
+    padding-right: 130px;
+    padding-left: 130px;
+    font-family: NavigationFonts;
+    font-size: 45px;
+}
+
+.portfolio_item
+{
+    padding-bottom: 300px;
+}
